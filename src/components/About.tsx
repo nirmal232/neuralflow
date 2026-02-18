@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const skills = [
   "JavaScript", "TypeScript", "React", "Next.js",
   "Node.js", "Python", "SQL", "Git"
@@ -8,6 +10,15 @@ export default function About() {
     <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/profile.jpg"
+            alt="Nirmal"
+            width={200}
+            height={200}
+            className="rounded-full object-cover"
+          />
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
