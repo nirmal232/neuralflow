@@ -11,12 +11,10 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              I&apos;m a passionate developer with experience building web applications.
-              I love turning ideas into reality through clean, efficient code.
+              I’m a Engineer driven by curiosity about how technology shapes experience. Professionally, I work across 3D graphics, pipeline development, and AI-powered systems, building scalable tools with Python, cloud, and web technologies while exploring new frontiers in digital fashion and immersive environments. Personally, I’m drawn to storytelling, aesthetics, and experimentation — from visual creation to reflective exploration of ideas that inspire growth. I aim to bridge creativity and engineering to craft meaningful digital experiences and evolve toward leadership roles that shape products, people, and impact.
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              When I&apos;m not coding, you can find me exploring new technologies,
-              contributing to open source, or enjoying a good cup of coffee.
+              On a personal note, I’m a software engineer from Chennai who has always been excited and inspired by the latest technology since childhood. Like many Indians, I love playing cricket and am an avid movie buff (feel free to suggest the last movie that affected you the most). I enjoy getting hands-on and experimenting with any new technology that impresses me. Thanks for taking the time to get to know me.
             </p>
           </div>
           <div>
