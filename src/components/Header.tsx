@@ -15,7 +15,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" className="text-xl font-bold">
-          NeuralFlow
+          Nirmal's Portfolio
         </a>
 
         {/* Desktop nav */}
