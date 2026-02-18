@@ -1,10 +1,10 @@
 const projects = [
   {
-    title: "Project One",
-    description: "A full-stack web application built with Next.js and Node.js",
-    tech: ["Next.js", "TypeScript", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Segmentation sevice",
+    description: "A Python based service which uses Meta's SAM model for segmenting images",
+    tech: ["Python", "SAM", "OpenCV", "NumPy", "Pillow"],
+    github: "https://github.com/nirmal232/segmentation",
+    // live: "https://example.com",
   },
   {
     title: "Project Two",
