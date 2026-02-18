@@ -9,7 +9,7 @@ export default function Contact() {
         </p>
         <div className="flex justify-center gap-6">
           <a
-            href="imnirmalkumar@gmail.com"
+            href="mailto:imnirmalkumar@gmail.com"
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
             Say Hello
