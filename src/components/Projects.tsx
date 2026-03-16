@@ -2,7 +2,7 @@
 
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const projects = [
+const projects: { title: string; description: string; tech: string[]; github: string; live?: string; color: string }[] = [
   {
     title: "Segmentation Service",
     description:
