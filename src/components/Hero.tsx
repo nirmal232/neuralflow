@@ -60,11 +60,11 @@ export default function Hero() {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div ref={contentRef} className="relative z-10 text-center max-w-3xl">
-        <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+        {/* <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
           <span className="text-xs tracking-widest uppercase text-gray-400">
-            Available for opportunities
+            Hey There !
           </span>
-        </div>
+        </div> */}
 
         <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold mb-4 leading-[1.1] tracking-tight">
           Hi, I&apos;m{" "}
