@@ -12,12 +12,11 @@ const projects = [
     color: "from-indigo-500/20 to-blue-500/20",
   },
   {
-    title: "Project Two",
+    title: "AI Creative Director",
     description:
-      "Mobile-first responsive dashboard with real-time data visualization and live updates.",
-    tech: ["React", "Tailwind CSS", "Firebase"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A multi-agent system that automates product photography creation. Give it a product name and brand, and it generates professional product images with different compositions, then evaluates them against brand guidelines.",
+    tech: ["Python", "MCP", "Langchain", "Langhgraph", "FastAPI", "Huggingface", "PostgreSQL" ],
+    github: "https://github.com/nirmal232/AiCreativeDirector",
     color: "from-purple-500/20 to-pink-500/20",
   },
   {
