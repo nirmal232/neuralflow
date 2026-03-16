@@ -116,6 +116,16 @@
   75% { transform: translate(-50%, -50%) translate(40px, 30px); }
 }
 
+/* Tech carousel scroll */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll-left 25s linear infinite;
+  width: max-content;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -127,5 +137,5 @@
   .animate-gradient { animation: none; }
   .skill-bar-fill { animation: none; }
   .animate-bounce { animation: none; }
-  [style*="float-orb"] { animation: none !important; }
+  .animate-scroll { animation: none; }
 }

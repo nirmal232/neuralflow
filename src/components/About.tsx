@@ -3,19 +3,14 @@
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const skills = [
-  { name: "Python", level: 90 },
-  { name: "JavaScript / TypeScript", level: 85 },
-  { name: "React / Next.js", level: 80 },
-  { name: "Node.js", level: 75 },
-  { name: "SQL / Databases", level: 70 },
-  { name: "AI / ML", level: 85 },
-];
+import TechCarousel from "./TechCarousel";
 
-const techStack = [
-  "Python", "TypeScript", "React", "Next.js",
-  "Node.js", "OpenCV", "NumPy", "Git",
-  "Docker", "AWS", "PostgreSQL", "TailwindCSS",
+const skills = [
+  { name: "Pipeline Engineering & Automation", icon: "⚙️" },
+  { name: "Full-stack & API Development", icon: "🧩" },
+  { name: "AWS Cloud Architecture", icon: "☁️" },
+  { name: "Generative AI & Agentic Systems", icon: "🤖" },
+  { name: "Technical Leadership", icon: "🚀" },
 ];
 
 export default function About() {
@@ -65,47 +60,30 @@ export default function About() {
           </div>
         </div>
 
-        {/* Skills + Tech Stack */}
-        <div className="grid md:grid-cols-2 gap-10">
-          {/* Skill bars */}
-          <div className="animate-on-scroll">
-            <h3 className="font-heading text-lg font-semibold mb-6 text-gray-200">
-              Core Skills
-            </h3>
-            <div className="space-y-4">
-              {skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between text-sm mb-1.5">
-                    <span className="text-gray-300">{skill.name}</span>
-                    <span className="text-gray-500">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-white/5 rounded-full overflow-hidden">
-                    <div
-                      className="skill-bar-fill h-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* Skills */}
+        <div className="mb-16 animate-on-scroll">
+          <h3 className="font-heading text-lg font-semibold mb-6 text-gray-200">
+            Core Skills
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="glass rounded-2xl p-5 hover:border-accent/20 hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(139,92,246,0.1)] transition-all duration-300 cursor-default"
+              >
+                <span className="text-2xl mb-3 block">{skill.icon}</span>
+                <span className="text-sm text-gray-300">{skill.name}</span>
+              </div>
+            ))}
           </div>
+        </div>
 
-          {/* Tech stack tags */}
-          <div className="animate-on-scroll">
-            <h3 className="font-heading text-lg font-semibold mb-6 text-gray-200">
-              Tech Stack
-            </h3>
-            <div className="flex flex-wrap gap-2.5">
-              {techStack.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-4 py-2 glass rounded-lg text-sm text-gray-300 hover:text-white hover:border-accent/30 transition-all duration-300 cursor-default"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
+        {/* Tech Stack Carousel */}
+        <div className="animate-on-scroll">
+          <h3 className="font-heading text-lg font-semibold mb-6 text-gray-200">
+            Tech Stack
+          </h3>
+          <TechCarousel />
         </div>
       </div>
     </section>

@@ -48,9 +48,8 @@ export default function Header() {
           ))}
           <li>
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/Nirmal-Kumar-S-Resume.pdf"
+              download
               className="text-sm px-4 py-2 rounded-full border border-accent/30 text-accent-light hover:bg-accent/10 transition-all duration-300"
             >
               Resume
