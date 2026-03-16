@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
-  title: "Nirmal Kumar",
-  description: "Personal portfolio showcasing my work and skills",
+  title: "Nirmal Kumar | Applied AI Engineer",
+  description:
+    "Personal portfolio showcasing my work in AI, 3D graphics, and web development",
 };
 
 export default function RootLayout({
@@ -15,8 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body
+        className={`${spaceGrotesk.variable} ${dmSans.variable} font-body bg-gray-950 text-gray-100 antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
